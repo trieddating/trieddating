@@ -1,9 +1,5 @@
 'use client';
 
-import { BarChartTD } from '@/components/BarChartTD';
-import { PieChartTD } from '@/components/PieChartTD';
-import { BarChartMultipleTD } from '@/components/BarChartMultipleTD';
-import Image from 'next/image';
 import Zoom from '@/components/Zoom';
 
 export default function Home() {
@@ -133,7 +129,13 @@ export default function Home() {
           <div className="bg-gray-100">
             <div className="container mx-auto px-4 py-16 lg:px-8 lg:py-32 xl:max-w-7xl">
               <div className="flex items-center justify-center rounded-xl border-2 border-dashed border-gray-200 bg-gray-50 py-32 text-gray-400">
-                <Zoom src={`attractive.png`} alt={`Attractive image`} height={1406} width={2514} layout={`responsive`}/>
+                <Zoom
+                  src={`attractive.png`}
+                  alt={`Attractive image`}
+                  height={1406}
+                  width={2514}
+                  layout={`responsive`}
+                />
               </div>
             </div>
           </div>
