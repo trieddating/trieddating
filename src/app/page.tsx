@@ -1,8 +1,8 @@
 'use client';
 
 import 'react-medium-image-zoom/dist/styles.css';
-import { TransformComponent, TransformWrapper } from 'react-zoom-pan-pinch';
 import React from 'react';
+import ZoomableImage from '@/components/ZoomableImage';
 
 export default function Home() {
   return (
@@ -127,19 +127,17 @@ export default function Home() {
           </div>
           {/* END Hero */}
 
-          {/* Section */}
+          {/* Main Section */}
           <div className="bg-gray-100">
             <div className="container mx-auto px-4 py-16 lg:px-8 lg:py-32 xl:max-w-7xl">
               <div className="flex items-center justify-center rounded-xl border-2 border-dashed border-gray-200 bg-gray-50 py-32 text-gray-400">
-                <TransformWrapper>
-                  <TransformComponent>
-                    <img
-                      alt="That Wanaka Tree, New Zealand by Laura Smetsers"
-                      src="attractive.png"
-                      width="2514"
-                    />
-                  </TransformComponent>
-                </TransformWrapper>
+                {/*<Image src={`attractive.png`} alt={`Attractive png`} width={2514} height={1406}/>*/}
+                <ZoomableImage
+                  src="/attractive.png"
+                  alt="Attractive png"
+                  width={2514}
+                  height={1406}
+                />
               </div>
             </div>
           </div>
