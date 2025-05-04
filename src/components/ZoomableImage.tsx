@@ -48,14 +48,14 @@ const PhotoSwipeImageViewer = ({
     tapAction: 'close',
 
     // Padding around the image when zoomed out
-    paddingFn: () => {
-      return {
-        top: 20,
-        bottom: 20,
-        left: 20,
-        right: 20,
-      };
-    },
+    // paddingFn: () => {
+    //   return {
+    //     top: 20,
+    //     bottom: 20,
+    //     left: 20,
+    //     right: 20,
+    //   };
+    // },
   } as Partial<PreparedPhotoSwipeOptions>;
 
   // Event handlers for mobile interactions
